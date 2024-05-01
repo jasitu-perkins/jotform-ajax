@@ -1,49 +1,44 @@
-function handleFormSubmission(form) {
-    console.log("Adding event listener to form:", form.id); // Debugging
-    form.addEventListener('submit', function(event) {
-        console.log("Form submit event triggered for form:", form.id); // Debugging
-        event.preventDefault();
-
-        var formData = new FormData(this);
-        console.log("Form data for form", form.id, ":", formData); // Debugging
-        var submissionUrl = this.action;
-        console.log("Submission URL for form", form.id, ":", submissionUrl); // Debugging
-
-        fetch(submissionUrl, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            console.log("Fetch response received for form", form.id); // Debugging
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(html => {
-            console.log("HTML response for form", form.id, ":", html); // Debugging
-            var parser = new DOMParser();
-            var doc = parser.parseFromString(html, "text/html");
-            // Replace the form's parent node with the response content
-            console.log("Replacing form content for form", form.id); // Debugging
-            this.parentNode.replaceChild(doc.body, this);
-        })
-        .catch(error => {
-            console.error('Error for form', form.id, ':', error); // Debugging
-            // Optionally, handle the error by replacing the form's parent node with an error message
-            var errorMessage = document.createElement('p');
-            errorMessage.textContent = 'An error occurred. Please try again.';
-            this.parentNode.replaceChild(errorMessage, this);
-        });
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOMContentLoaded event triggered"); // Debugging
-    var forms = document.querySelectorAll('.jotform-form'); // Use querySelectorAll to handle multiple forms
-    console.log("Found", forms.length, "forms to handle"); // Debugging
-    forms.forEach(function(form) {
-        console.log("Handling form:", form.id); // Debugging
-        handleFormSubmission(form);
-    });
+    var forms = document.getElementsByClassName('jotform-form');
+    if (forms.length > 0) {
+        var form = forms[0]; // Target the first form with the class 'jotform-form'
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var formData = new FormData(this); // Collect form data
+            var submissionUrl = this.action; // Get the submission URL from the form's action attribute
+
+            // Use the Fetch API to send the form data to JotForm
+            fetch(submissionUrl, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // Assuming a successful submission, fetch the Thank You page HTML
+                return fetch(submissionUrl).then(response => response.text());
+            })
+            .then(html => {
+                // Parse the HTML string into a document object
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+
+                // Extract the desired content from the Thank You page
+                // For example, if you want to display the entire body content:
+                var content = doc.body.innerHTML;
+
+                // Insert the content into your page
+                document.getElementById('responseContainer').innerHTML = content;
+            })
+            .catch(error => {
+                // Handle any errors
+                console.error('Error:', error);
+                document.getElementById('responseContainer').innerHTML = '<p>An error occurred. Please try again.</p>';
+            });
+        });
+    } else {
+        console.error('Form element not found');
+    }
 });
