@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jotform AJAX Test</title>
-</head>
-<body>
-    <script src="https://perkins.jotform.com/static/prototype.forms.js?v=3.3.53428" type="text/javascript"></script>
-<script src="https://perkins.jotform.com/static/jotform.forms.js?v=3.3.53428" type="text/javascript"></script>
-<script src="https://perkins.jotform.com/js/punycode-1.4.1.min.js?v=3.3.53428" type="text/javascript" defer></script>
+<script src="https://perkins.jotform.com/static/prototype.forms.js?v=3.3.53512" type="text/javascript"></script>
+<script src="https://perkins.jotform.com/static/jotform.forms.js?v=3.3.53512" type="text/javascript"></script>
+<script src="https://perkins.jotform.com/js/punycode-1.4.1.min.js?v=3.3.53512" type="text/javascript" defer></script>
 <script type="text/javascript">	JotForm.newDefaultTheme = true;
 	JotForm.extendsNewTheme = false;
 	JotForm.singleProduct = false;
@@ -45,13 +37,13 @@ window.addEventListener('error', function(event) {
    setTimeout(function() {
 JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Jotform AJAX test","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,{"description":"","name":"name","qid":"5","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"6","subLabel":"example@example.com","text":"Email","type":"control_email"}]);}, 20); 
 </script>
-<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/stylebuilder/static/form-common.css?v=96b347e
+<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/stylebuilder/static/form-common.css?v=c454b9c
 "/>
 <style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.53428"/>
-<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/css/styles/payment/payment_styles.css?3.3.53428" />
-<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/css/styles/payment/payment_feature.css?3.3.53428" />
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://perkins.jotform.com/submit/241166348817058" method="post" name="form_241166348817058" id="241166348817058" accept-charset="utf-8" autocomplete="off"><input type="hidden" name="formID" value="241166348817058" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1714159115059" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1714159115059" />
+<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.53512"/>
+<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/css/styles/payment/payment_styles.css?3.3.53512" />
+<link type="text/css" rel="stylesheet" href="https://perkins.jotform.com/css/styles/payment/payment_feature.css?3.3.53512" />
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://perkins.jotform.com/submit/241166348817058" method="post" name="form_241166348817058" id="241166348817058" accept-charset="utf-8" autocomplete="off"><input type="hidden" name="formID" value="241166348817058" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1714584499360" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1714584499360" />
   <div role="main" class="form-all">
     <ul class="form-section page-section">
       <li id="cid_1" class="form-input-wide" data-type="control_head">
@@ -66,8 +58,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Jotform 
           <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_5" name="q5_name[first]" class="form-textbox" data-defaultvalue="" autoComplete="nope" size="10" data-component="first" aria-labelledby="label_5 sublabel_5_first" value="" /><label class="form-sub-label" for="first_5" id="sublabel_5_first" style="min-height:13px">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_5" name="q5_name[last]" class="form-textbox" data-defaultvalue="" autoComplete="nope" size="15" data-component="last" aria-labelledby="label_5 sublabel_5_last" value="" /><label class="form-sub-label" for="last_5" id="sublabel_5_last" style="min-height:13px">Last Name</label></span></div>
         </div>
       </li>
-      <li class="form-line" data-type="control_email" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="input_6" aria-hidden="false"> Email </label>
-        <div id="cid_6" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_6" name="q6_email" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="nope" style="width:310px" size="310" data-component="email" aria-labelledby="label_6 sublabel_input_6" value="" /><label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px">example@example.com</label></span> </div>
+      <li class="form-line jf-required" data-type="control_email" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="input_6" aria-hidden="false"> Email<span class="form-required">*</span> </label>
+        <div id="cid_6" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_6" name="q6_email" class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="nope" style="width:310px" size="310" data-component="email" aria-labelledby="label_6 sublabel_input_6" required="" value="" /><label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px">example@example.com</label></span> </div>
       </li>
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">
@@ -94,7 +86,3 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Jotform 
     }
   </script>
 </form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isAdmin=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
-<div id="responseContainer"></div>
-<script src="./ajax-js.js"></script>
-</body>
-</html>
