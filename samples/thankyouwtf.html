@@ -1,0 +1,85 @@
+<body id="stage" class="thankyou">
+    <div class="form-all">
+      <div class="wrapper">
+<div class="col-1"><img class="tyBgImage" src="https://cdn.jotfor.ms/img/Thankyou-iconV2.png?v=0.1" alt="thank you icon"></div>
+<div class="col-2">
+<div class="thankyou-wrapper">
+<p class="thank-you-icon" style="text-align:center;"><img class="notActiveTyIcon" src="https://cdn.jotfor.ms/img/Thankyou-iconV2.png?v=0.1" alt="thank you check icon" width="153" height="156"></p>
+<div style="text-align:center;">
+<h1 class="thankyou-main-text ty-text" style="text-align:center;">Thank You! Test 1</h1>
+<p class="thankyou-sub-text ty-text" style="text-align:center;">Your submission has been received.</p>
+</div>
+</div>
+<div class="nonEditableInvisable">
+<div class="thankYouButtonWrapper notActive">
+<div class="thankYouFillAgain thankYouFillAgainWrapper tyWrapper notActive newActionButtons">
+<div class="thankyou-btn-wrapper"><a class="ty-buttons thankYouFillAgain" style="color:#2c3345;background-color:#e5e7f2;border-color:#E5E7F2;text-decoration:none;" href="/241166348817058"> Fill Again </a></div>
+<div class="settingButonWrapper">&nbsp;</div>
+</div>
+<div class="thankYouEditSubmission thankYouEditSubmissionWrapper tyWrapper notActive newActionButtons">
+<div class="thankyou-btn-wrapper"><a class="ty-buttons thankYouEditSubmission" style="text-decoration:none;border-color:#E5E7F2;" href="https://perkins.jotform.com/edit/5905797141894827027" rel="nofollow"> Edit Submission </a></div>
+<div class="settingButonWrapper">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nonEditableInvisable isFillAnotherForm notActive">&nbsp;</div>
+<div class="nonEditableInvisable isPDF notActive">
+<div class="thankYouDownloadPDF thankYouDownloadPDFWrapper tyWrapper notActive" style="border-top:1px solid #D7D8E1;">
+<ul class="thankYouPDFList">
+<li class="downloadPDFItem downloadPDFItem-241166348817058 notActive newActionButtons" title="Default Document">
+<div class="pdf-image-wrapper"><span class="pdf-SVG">&nbsp;</span></div>
+<div class="pdf-name-wrapper"><span class="pdf-name">5905797141894827027-Jotform AJAX test.pdf</span></div>
+<div class="thankyou-btn-wrapper"><a class="ty-buttons thankYouDownloadPDF" style="text-decoration:none;border-color:#E5E7F2;" href="https://perkins.jotform.com/server.php?action=getSubmissionPDFv2&amp;hash=eEo2d0dLUVdVeXJaR01xQzVVYnJsVy9oV2svV1ppdWRWMmw2dWx3NmM0eDRKTy9GaVVkd01yTStMbXNMUFlZT0N2aWVuQzA3Nm0vNEtYdk50Mk91R0RqcUREYmIwYWxyRkNRZnFBdktDRTArQThmV0haQ3BWU2s1cWk1Y0ErVEdHWkIxQ2ZTSmh5UXRZUm5OaTE0MC9wQmkvMnluVUpaWEJmRE9meEo0WStiZS9sOFR5UjhkVUdFbHM2alJwZUNi" rel="nofollow"> Download PDF </a></div>
+<div class="settingButonWrapper">&nbsp;</div>
+</li>
+</ul>
+</div>
+</div>
+      
+    </div>
+    <div id="footer" class="form-footer" style="display: block !important;">
+      
+    </div>
+  
+  <script type="text/javascript">
+    function inIframe () {
+      try {
+          return window.self !== window.top;
+      } catch (e) {
+          return true;
+      }
+    }
+    function sendHeightPageToParent() {
+        var formAllContent = document.querySelector('.form-all');
+        var compStyles = window.getComputedStyle(formAllContent);
+        var stageMarginTop = formAllContent ? parseInt(compStyles.getPropertyValue('marginTop')) || parseInt(compStyles.getPropertyValue('margin')) || 0 : 0;
+        var isMobile = window.matchMedia("(pointer:coarse)").matches || window.matchMedia("only screen and (max-width: 480px)").matches;
+        var isIframe = inIframe();
+        var contentHeight = formAllContent.offsetHeight + document.querySelector('.form-footer').offsetHeight;
+        var height = (isIframe && isMobile) ? contentHeight : document.body.offsetHeight + (stageMarginTop * 2);
+        window.scrollTo(0,0);
+        window.parent.postMessage('setHeight:' + height + ':241166348817058', '*');
+    }
+    if (window.parent !== window) {
+      window.parent.postMessage({ action: 'submission-completed', formID: '241166348817058' }, '*');
+      sendHeightPageToParent();
+      window.addEventListener('load', sendHeightPageToParent);
+    }
+
+    window.newThankYouPage = true;
+    window.submissionID = '';
+    window.formID = '241166348817058';
+    window.document.title = 'Thank You';
+    window.publishURL = 'https://perkins.jotform.com/241166348817058';
+    var favicon = document.querySelector('link[rel="shortcut icon"]');
+    window.isDarkMode = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if(favicon && window.isDarkMode) {
+      favicon.href = favicon.href.replaceAll('favicon-2021-light.ico', 'favicon-2021-dark.ico');
+    }
+  </script>
+  <script src="https://perkins.jotform.com//js/includes/thankYouPageScripts.js"></script>
+  
+
+</body>
