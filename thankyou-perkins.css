@@ -138,10 +138,10 @@
   background-repeat: no-repeat; 
   display: flex; 
   } 
- #stage. nonEditableInvisable:last-child { 
+ #stage .nonEditableInvisable:last-child { 
   padding-bottom: 20px; 
   } 
-#stage. selectedActionButton .settingButon { 
+#stage .selectedActionButton .settingButon { 
   display: block; 
   } 
  .ty-buttons.thankYouDownloadPDF, .ty-buttons.thankYouFillAnotherForm { 
@@ -154,11 +154,11 @@
     background-color: #E3E5F5;
   }
   
-#stage. downloadPDFItem.active + .active, .fillAnotherFormItem.active + .active { 
+#stage .downloadPDFItem.active + .active, .fillAnotherFormItem.active + .active { 
   margin-top: 16px; 
   margin-bottom: 0; 
   }
-#stage. downloadPDFItem.active { 
+#stage .downloadPDFItem.active { 
   margin-bottom: 0; 
   } 
   .form-SVG { 
@@ -236,7 +236,7 @@ background-repeat: no-repeat;
   flex-wrap: wrap;
   margin: 0;
 }
-#stage. nonEditableInvisable + #stage. nonEditableInvisable {
+#stage .nonEditableInvisable + #stage .nonEditableInvisable {
   border-top: 0px;
 }
 #stage .thankYouDownloadPDFWrapper, #stage .thankYouFillAnotherFormWrapper {
@@ -337,10 +337,10 @@ background-repeat: no-repeat;
   .pdf-image-wrapper, #stage .form-image-wrapper {
     margin-right: 0;
   }
-  .pdf-name-wrapper, #stage.  form-name-wrapper {
+  .pdf-name-wrapper, #stage .form-name-wrapper {
     display: block;
   }
-  #stage.  downloadPDFItem .thankyou-btn-wrapper, #stage .fillAnotherFormItem .thankyou-btn-wrapper {
+  #stage .downloadPDFItem .thankyou-btn-wrapper, #stage .fillAnotherFormItem .thankyou-btn-wrapper {
     margin: auto;
   }
 }
@@ -349,7 +349,7 @@ background-repeat: no-repeat;
   background: white;
   color: black;
  }
-#stage.  form-all {
+#stage .form-all {
   margin:0 auto;
   max-width: 100%;
   box-shadow: none;
