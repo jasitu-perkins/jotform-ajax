@@ -1,0 +1,119 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/plummers/Documents/Trust/Donor Welcome Packet/Donor_Welcome_Survey Folder/Document fonts/AdobeFnt22.lst
+FileLength:2963
+FileModTime:684773514
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Bold
+FamilyName:Avenir Next LT Pro
+StyleName:Bold
+MenuName:AvenirNext LT Pro Medium
+StyleBits:2
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro Bold
+WritingScript:Roman
+OutlineFileName:/Users/plummers/Documents/Trust/Donor Welcome Packet/Donor_Welcome_Survey Folder/Document fonts/Linotype - AvenirNextLTPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:68276
+FileModTime:629412936
+NameArray:0,Mac,18,AvenirNext LT Pro Bold
+NameArray:0,Mac,4,Avenir Next LT Pro Bold
+NameArray:0,Win,1,AvenirNext LT Pro Medium
+NameArray:0,Win,16,Avenir Next LT Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Demi
+FamilyName:Avenir Next LT Pro
+StyleName:Demi
+MenuName:AvenirNext LT Pro Regular
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro Demi
+WritingScript:Roman
+OutlineFileName:/Users/plummers/Documents/Trust/Donor Welcome Packet/Donor_Welcome_Survey Folder/Document fonts/Linotype - AvenirNextLTPro-Demi.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:65580
+FileModTime:629412936
+NameArray:0,Mac,18,AvenirNext LT Pro Demi
+NameArray:0,Mac,4,Avenir Next LT Pro Demi
+NameArray:0,Win,1,AvenirNext LT Pro Regular
+NameArray:0,Win,16,Avenir Next LT Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Medium
+FamilyName:Avenir Next LT Pro
+StyleName:Medium
+MenuName:AvenirNext LT Pro Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro Medium
+WritingScript:Roman
+OutlineFileName:/Users/plummers/Documents/Trust/Donor Welcome Packet/Donor_Welcome_Survey Folder/Document fonts/Linotype - AvenirNextLTPro-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:65472
+FileModTime:629412936
+NameArray:0,Mac,18,AvenirNext LT Pro Medium
+NameArray:0,Mac,4,Avenir Next LT Pro Medium
+NameArray:0,Win,1,AvenirNext LT Pro Medium
+NameArray:0,Win,16,Avenir Next LT Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Regular
+FamilyName:Avenir Next LT Pro
+StyleName:Regular
+MenuName:AvenirNext LT Pro Regular
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro
+WritingScript:Roman
+OutlineFileName:/Users/plummers/Documents/Trust/Donor Welcome Packet/Donor_Welcome_Survey Folder/Document fonts/Linotype - AvenirNextLTPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:65056
+FileModTime:629412936
+NameArray:0,Mac,18,AvenirNext LT Pro Regular
+NameArray:0,Mac,4,Avenir Next LT Pro
+NameArray:0,Win,1,AvenirNext LT Pro Regular
+NameArray:0,Win,16,Avenir Next LT Pro
+%EndFont
+
